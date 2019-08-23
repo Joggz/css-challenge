@@ -8,7 +8,9 @@
 }
 body{
     font-family: 'Open Sans';
-    font-weight: 400
+    font-weight: 400;
+    width: 100vw;
+    overflow-x: hidden
 }
 h4, h1, h2{ 
     font-family: Raleway;
