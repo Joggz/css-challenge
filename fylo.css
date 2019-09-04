@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+*,*::before,*:after {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.section .hero {display: none}
+body{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    width: 100%;
+    overflow-x: hidden
+}
+h4, h1, h2{ 
+    font-family: Raleway;
+    font-weight: 700
+}
+
+#header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    background-color:hsl(243, 58%, 33%);
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.top-nav{
+    display: flex;
+    /* background: green; */
+    justify-content: space-between
+
+}
+
+main {
+    
+    max-width: 100%;
+}
+.logo, .register, .container {
+    margin-top: 35px
+}
+.logo{
+    margin-left: 5.0rem
+}
+.register{
+    margin-right: 5.0em
+}
+input[type='button'] {
+    outline: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    color: white;
+    margin-left: 15px
+}
+input[type='button']:nth-child(2) {
+    background-color: hsl(163, 95%, 43%);
+    width: 6.0em;
+    height: 2.0em;
+    border-radius: 3px
+}
+.sec-in-nav{
+    /* background: green; */
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 5em;
+    line-height: 40px
+}
+.text {
+     margin-left: 1.6em;
+    width: 450px;
+    color:#fff; 
+    /* background: greenyellow */
+    
+}
+.get-started {
+    width: 15em;
+    height: 3.5em;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    background-color: hsl(163, 95%, 43%);
+    outline: none;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 3.5em;
+    color: #fff;
+}
+.illustration-hero img{
+    width: 15em;
+    margin-right: 5.9rem;
+    margin-bottom: 150px
+}
+
+.centred-text { 
+    text-align: center;
+    margin-bottom: 5.5em;
+    /* margin-top: 2.5rem */
+}
+#s{
+    /* background: blue; */
+    width: 55%;
+    line-height: 25px;
+}
+h5{
+    /* background:  yellow; */
+    /* width:75%; */
+    height: 90px;
+    line-height: 15px;
+    color:hsl(0, 0%, 50%);
+    margin-top: 12px
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+ .hero {display: inline-block}
+#features {
+    width: 15em;
+    height: 15em;
+    margin-left: 3.5em
+
+}
+
+.subcription{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    text-align: center;
+     /* background: purple */
+} 
+#g{
+    width: 100vw;
+    margin-right: 105em;
+    margin-top: 35px;
+    /* background: yellow */
+}
+
+input[type='email'] {
+    width: 25em;
+    height: 2.0em;
+    border-radius:  5px;
+    outline: none;
+    padding: 0.25rem;
+    border: 1px solid black
+}
+
+.input input[type='button'] {
+    /* width: 15em; */
+    height: 3em;   
+    width: 15em
+}
+
+.signup {
+    height: 1.9em
+}
+.footer{
+    margin-top: 10em;
+    clip-path: polygon(0 0, 100% 24%, 105% 100%, 0% 100%);
+   background-color: hsl(243, 87%, 12%);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 55vh;
+
+}
+hr {
+    width: 1;
+    height:  120px
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 45px;
+    line-height: 50px;
+    color: #fff;
+}
+
+ul li{
+    list-style-type: none;
+    line-height: 1.5em;
+    color: hsl(0, 0%, 50%)
+}
+section h4 {
+    color: white
+    /* display: inline-block; */
+    
+}
+
+section ul {
+    margin-top: 0.9em;
+}
+
+section ul li {
+    color: white
+}
+footer #support {
+    margin-bottom: 1.5em;
+    /* background-color: purple */    
+}
+#updates{
+    margin-right: 2.5em;
+    margin-top: 1.3em;
+    /* font-size: .9rem */
+}
+.txt{
+    margin-bottom: 1.0em; 
+    font-size: 0.9rem
+}
+#mail{
+    margin-bottom: 1.0em
+}
+
+section input[type='email']{
+    width: 25em;
+    /* margin-top:  */
+}
+
+#join{
+    background: hsl(163, 95%, 43%);;
+    float: right;
+    width: 15em;
+    height:3.0em;
+    border-radius: 5px;
+    margin-right: .1rem;
+    /* margin-top: -25px; */
+    
+    /* margin-bottom: 5.5em */
+    
+}
+/* .container {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  } */
+  
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    
+    *,
+    *:before,
+    *:after {
+        margin:  0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%
+    }
+    /* .main {
+        width: 100vw
+    } */
+
+    body {
+        /* overflow-x: hidden; */
+        max-width: 100%;
+        height: 100vh
+
+    } 
+    #s {
+        
+        width: 100vw;
+        /* background: blue */
+    }
+    article {border-bottom : 1px solid black}
+    section {
+        border-bottom: 8px solid black
+    }
+    h2{ margin-top: 2.5rem}
+    /* Header view */
+    #header {
+
+        clip-path: polygon(0 0, 100% 100, 100% 100%, 0 43%);
+        overflow-x: hidden;
+        max-width: 100%;
+        /* max-height: 100vh; */
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-end */
+    }
+
+  
+    .logo{
+        margin: 0;
+        padding: 0;
+        margin-top: 1.5rem;
+        margin-left: 2rem
+    }
+
+     /* hamburger button */
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+        position: fixed;
+        right: 0
+        /* z-index: 5; */
+        /* background: yellow */
+      }
+      
+      .bar {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+        
+      }
+
+      .container .show {
+          /* transform: rotate(180deg); */
+          
+      }
+      .container .show:nth-child(1) {
+          transform: rotate(45deg) translate(11px, 6px)
+      }
+      .container .show:nth-child(2) {
+        opacity: 0;
+        
+    }
+    .container .show:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6.5px)
+    }
+    
+    .centred-text { 
+        font-size: 1.0rem;
+        font-weight: 900;
+        margin-top: 1rem
+    }
+    .hero{
+        display: block
+    }
+  
+    .grid{
+        display: block;
+        width:100vw;
+        text-align: center;
+        max-width: 100%
+    }
+    /* h5 { background: blue} */
+    /* Classes Hidden */
+
+    .illustration-hero{ 
+        display: none
+    }
+    .subcription{
+        display: block;
+        font-size: 0.7rem
+    }
+    .register{
+        display: none
+    }
+    #updates {
+        display: none
+    }
+    .sec-in-nav {
+        margin-right: 45rem;
+        width: 100vw; 
+        /* background: purple */
+    }
+    .text {
+        margin-left: 0.7rem
+    }
+    .section img {
+        display: none
+    }
+    .subcription {
+        /* border-bottom: 5px solid black; */
+        width: 100vw;
+        /* margin-right: 105em; */
+        /* margin-top: 35px; */
+        
+    }
+    .input{
+        display: flex;
+        margin-bottom: 3rem;
+        
+    }
+    .subcription input[type='email'] {
+        width: 60vw;
+        height:2.35rem;
+        margin-left: 1rem
+    }
+    .subcription input[type='button'] {
+        width: 30vw;
+        margin-right: 1.5rem;
+        /* border-bottom: 5px solid black */
+    }
+    #g {
+        /* background: yellow; */
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 1.5rem
+    }
+
+    .get-started {
+        margin-bottom: 10.9rem;
+        margin-left: 1rem;
+        /* width: 100%; */
+        /* background: purple */
+    }
+
+    /* Footer */
+    .footer {
+        display: block;
+        height: 100vh;
+        margin-top: 9rem;
+        /* background: blue; */
+        margin-top: 28rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+        /* overflow-x: hidden */
+    }
+     #contact {
+        /* display: inline-block; */
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);    */
+        /* margin-top: 10rem; */
+        /* background: pink; */
+        margin-top: 23rem;
+        margin-left: 1rem;
+        line-height: 4rem
+        /* margin-top: 25rem; */
+    }
+    #about-us {
+        margin-top: 1rem;
+        margin-left: 1.0rem;
+        line-height: 1rem
+    }
+    #company {
+        margin-top: 1rem;
+        margin-left: 1.0rem;
+        line-height: 1rem
+    }
+    #support {
+        margin-top: 1rem;
+        margin-left: 1.0rem;
+        line-height: 1rem
+    }
+    .fylo {
+        width: 5.5rem;
+        margin-top: 1rem
+    }
+    #contact:nth-child(1) {
+        /* background: red */
+    }
+    hr {
+        height: 1px;
+        width: 100vw
+    }
+    footer section {
+        border-bottom: none
+    }
+    section h4 {
+        font-size: 1.5rem;
+        margin-top: 1rem
+    }
+    #contact {
+        
+    }
+}
+
+ 
