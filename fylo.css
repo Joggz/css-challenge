@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html {
+    font-size: 16px
+}
 
 *,*::before,*:after {
     margin: 0;
@@ -22,7 +25,7 @@ h4, h1, h2{
 }
 
 #header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     background-color:hsl(243, 58%, 33%);
     max-width: 100%;
     max-height: 100vh;
@@ -82,7 +85,7 @@ input[type='button']:nth-child(2) {
     width: 15em;
     height: 3.5em;
     border-radius: 5px;
-    margin-top: 1.5em;
+    margin-top: 1.3em;
     background-color: hsl(163, 95%, 43%);
     outline: none;
     background-repeat: no-repeat;
@@ -100,8 +103,8 @@ input[type='button']:nth-child(2) {
 
 .centred-text { 
     text-align: center;
-    margin-bottom: 5.5em;
-    /* margin-top: 2.5rem */
+    margin-bottom: 5rem;
+    margin-top: 2.5rem
 }
 #s{
     /* background: blue; */
@@ -134,7 +137,7 @@ h5{
 .subcription{
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 5rem;
     text-align: center;
      /* background: purple */
 } 
@@ -171,7 +174,7 @@ input[type='email'] {
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   height: 55vh;
+   height: 45vh;
 
 }
 hr {
@@ -190,7 +193,7 @@ hr {
 
 ul li{
     list-style-type: none;
-    line-height: 1.5em;
+    line-height: 1.5rem;
     color: hsl(0, 0%, 50%)
 }
 section h4 {
@@ -216,11 +219,11 @@ footer #support {
     /* font-size: .9rem */
 }
 .txt{
-    margin-bottom: 1.0em; 
+    margin-bottom: 1.0rem; 
     font-size: 0.9rem
 }
 #mail{
-    margin-bottom: 1.0em
+    margin-bottom: 1.0rem
 }
 
 section input[type='email']{
@@ -235,11 +238,8 @@ section input[type='email']{
     height:3.0em;
     border-radius: 5px;
     margin-right: .1rem;
-    /* margin-top: -25px; */
-    
-    /* margin-bottom: 5.5em */
-    
 }
+#update {display:none}
 /* .container {
     display: none;
     cursor: pointer;
@@ -262,220 +262,122 @@ section input[type='email']{
         margin:  0;
         padding: 0;
         box-sizing: border-box;
-        max-width: 100%
-    }
-    /* .main {
-        width: 100vw
-    } */
-
-    body {
-        /* overflow-x: hidden; */
         max-width: 100%;
-        height: 100vh
-
+        overflow-x: hidden
     } 
-    #s {
-        
-        width: 100vw;
-        /* background: blue */
+    /* header { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);} */
+    body {
+        max-width: 100vw
     }
-    article {border-bottom : 1px solid black}
-    section {
-        border-bottom: 8px solid black
+    .top-nav {
+        display: flex;
+        justify-content: space-around;
     }
-    h2{ margin-top: 2.5rem}
-    /* Header view */
-    #header {
+     .logo, .register { margin: 2rem 0 0 0 }
 
-        clip-path: polygon(0 0, 100% 100, 100% 100%, 0 43%);
-        overflow-x: hidden;
-        max-width: 100%;
-        /* max-height: 100vh; */
-        margin: 0;
-        padding: 0;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: flex-end */
-    }
-
-  
-    .logo{
-        margin: 0;
-        padding: 0;
-        margin-top: 1.5rem;
-        margin-left: 2rem
-    }
-
-     /* hamburger button */
-    .container {
-        display: inline-block;
-        cursor: pointer;
-        margin-right: 2rem;
-        margin-top: 1.5rem;
-        position: fixed;
-        right: 0
-        /* z-index: 5; */
-        /* background: yellow */
-      }
-      
-      .bar {
-        width: 35px;
-        height: 5px;
-        background-color: #fff;
-        margin: 6px 0;
-        transition: 0.4s;
-        
-      }
-
-      .container .show {
-          /* transform: rotate(180deg); */
-          
-      }
-      .container .show:nth-child(1) {
-          transform: rotate(45deg) translate(11px, 6px)
-      }
-      .container .show:nth-child(2) {
-        opacity: 0;
-        
-    }
-    .container .show:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6.5px)
-    }
     
-    .centred-text { 
-        font-size: 1.0rem;
-        font-weight: 900;
-        margin-top: 1rem
+     .text{margin: 0rem;  font-size: 1.7rem; text-align: center}
+     
+     .illustration-hero { align-self: center;  width: 10rem; height: 7rem; overflow-y:hidden}
+     
+      .sec-in-nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:  space-between;
+        margin-top: 1em;
+        
     }
-    .hero{
-        display: block
+   .text {
+        width: 100%;
+        color:#fff;  
     }
-  
+    .get-started { margin-left: 7rem; margin-bottom: 5rem}
+    .centred-text { font-size: 2.5rem; margin-top: 3rem; font-weight: 300; margin-bottom: 2.5rem}
     .grid{
         display: block;
-        width:100vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        
+    }
+    #s{width: 100vw; margin: 2.5rem 1.5rem 1rem 0rem}
+    .section { text-align: center;}
+    h5{margin: 1rem 0 1rem}
+
+    input[type='email'] {
+        height: 3.0em;
+    }
+    /* 9993.87 */
+    .input input[type='button'] {
+        margin: 1rem .4rem 0 0.4rem ;
+        height: 3em;   
+        width: 25.5em;
+        border-radius:  5px;
+        outline: none;
+
+    }
+
+    .footer{
+        display: inline-block;
+        margin-top: 2rem;
+        height: 100vh
+    }
+    hr{opacity:  0}
+    
+    #contact {
+        margin: 1rem 0 0rem 1rem ; 
+        padding-right: 2rem;
+        /* background: yellow */
+    }
+    .fylo {margin-right: 15rem; margin-top: 3.6rem}
+    #about-us, #company, #support {
+        margin: 0rem 0 0rem 1.5rem
+    }
+    
+    #update { 
+        display: block;
         text-align: center;
-        max-width: 100%
-    }
-    /* h5 { background: blue} */
-    /* Classes Hidden */
-
-    .illustration-hero{ 
-        display: none
-    }
-    .subcription{
-        display: block;
-        font-size: 0.7rem
-    }
-    .register{
-        display: none
-    }
-    #updates {
-        display: none
-    }
-    .sec-in-nav {
-        margin-right: 45rem;
-        width: 100vw; 
-        /* background: purple */
-    }
-    .text {
-        margin-left: 0.7rem
-    }
-    .section img {
-        display: none
-    }
-    .subcription {
-        /* border-bottom: 5px solid black; */
-        width: 100vw;
-        /* margin-right: 105em; */
-        /* margin-top: 35px; */
-        
-    }
-    .input{
-        display: flex;
-        margin-bottom: 3rem;
-        
-    }
-    .subcription input[type='email'] {
-        width: 60vw;
-        height:2.35rem;
-        margin-left: 1rem
-    }
-    .subcription input[type='button'] {
-        width: 30vw;
-        margin-right: 1.5rem;
-        /* border-bottom: 5px solid black */
-    }
-    #g {
-        /* background: yellow; */
-        margin: 0 auto;
-        width: 85%;
-        margin-top: 1.5rem
-    }
-
-    .get-started {
-        margin-bottom: 10.9rem;
-        margin-left: 1rem;
-        /* width: 100%; */
-        /* background: purple */
-    }
-
-    /* Footer */
-    .footer {
-        display: block;
-        height: 100vh;
-        margin-top: 9rem;
-        /* background: blue; */
-        margin-top: 28rem;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
-        /* overflow-x: hidden */
-    }
-     #contact {
-        /* display: inline-block; */
-        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);    */
-        /* margin-top: 10rem; */
-        /* background: pink; */
-        margin-top: 23rem;
-        margin-left: 1rem;
-        line-height: 4rem
-        /* margin-top: 25rem; */
-    }
-    #about-us {
         margin-top: 1rem;
-        margin-left: 1.0rem;
-        line-height: 1rem
-    }
-    #company {
-        margin-top: 1rem;
-        margin-left: 1.0rem;
-        line-height: 1rem
-    }
-    #support {
-        margin-top: 1rem;
-        margin-left: 1.0rem;
-        line-height: 1rem
-    }
-    .fylo {
-        width: 5.5rem;
-        margin-top: 1rem
-    }
-    #contact:nth-child(1) {
         /* background: red */
     }
-    hr {
-        height: 1px;
-        width: 100vw
+   section h4 {margin: 1rem 0 1rem 0; font-size: 1.5rem}
+    #updates {display: none}
+    section ul {
+        margin-top: 0;
     }
-    footer section {
-        border-bottom: none
+    
+    section ul li {
+        color: white;
+    line-height: 2.6rem
     }
-    section h4 {
-        font-size: 1.5rem;
-        margin-top: 1rem
+    footer #support {
+        margin-bottom: 0rem;
+        /* background-color: purple */    
     }
-    #contact {
-        
+    #updates{
+        margin-right: 2.5em;
+        margin-top: 1.3rem;
+        /* font-size: .9rem */
     }
-}
+    .txt{
+        margin-bottom: 1.0rem; 
+        font-size: 0.9rem
+    }
+    #mail{
+        margin-bottom: 1.0rem
+    }
+    
+    section input[type='email']{
+        width: 25em;
+        /* margin-top:  */
+    }
+    
+    #join{
+        background: hsl(163, 95%, 43%);;
+        float: right;
+        width: 15em;
+        height:3.0em;
+        border-radius: 5px;
+        margin-right: 1rem;
+    }
 
- 
+}
